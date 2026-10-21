@@ -1,0 +1,9 @@
+// Configuração para publicar na Cloudflare (Workers com arquivos estáticos).
+// O "name" precisa ser igual ao nome do projeto criado no painel da Cloudflare.
+{
+  "name": "pong-game",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  }
+}

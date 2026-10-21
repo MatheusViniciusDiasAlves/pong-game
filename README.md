@@ -16,6 +16,8 @@ Cada página tem: faixa "Protótipo · proposta de Matheus Vinicius", hero com C
 
 Preços, horários, endereço, Instagram e fotos não foram inventados: aparecem como campos tracejados "a preencher". No HTML, procure por `class="fill"` e troque pelo conteúdo real. Os itens de cardápio/serviço são ilustrativos e estão sinalizados como tal na página.
 
-## Publicar no Netlify
+## Publicar
 
-Arraste a pasta do projeto em app.netlify.com/drop, ou conecte o repositório com publish directory `.` e sem comando de build.
+**Cloudflare:** o `wrangler.jsonc` publica a raiz do repositório como site estático (o `.assetsignore` deixa de fora `.git`, README e arquivos de configuração). O campo `name` do `wrangler.jsonc` precisa ser igual ao nome do projeto no painel da Cloudflare. Deploy command: `npx wrangler deploy`, sem build command.
+
+**Netlify:** arraste a pasta do projeto em app.netlify.com/drop, ou conecte o repositório com publish directory `.` e sem comando de build.
